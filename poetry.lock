@@ -1641,6 +1641,33 @@ files = [
 ]
 
 [[package]]
+name = "types-pymysql"
+version = "1.0.19.7"
+description = "Typing stubs for PyMySQL"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-PyMySQL-1.0.19.7.tar.gz", hash = "sha256:8ea7083a3bd37c4e77f38d8d93e488fba3bb03e3d3d41cc52cd92110375ed517"},
+    {file = "types_PyMySQL-1.0.19.7-py3-none-any.whl", hash = "sha256:672f0e3e5070da2dc58448d289b878c5c99febb37c9f2cbe309779301ae914fb"},
+]
+
+[[package]]
+name = "types-pyopenssl"
+version = "23.2.0.0"
+description = "Typing stubs for pyOpenSSL"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-pyOpenSSL-23.2.0.0.tar.gz", hash = "sha256:43e307e8dfb3a7a8208a19874ca060305f460c529d4eaca8a2669ea89499f244"},
+    {file = "types_pyOpenSSL-23.2.0.0-py3-none-any.whl", hash = "sha256:ba803a99440b0c2e9ab4e197084aeefc55bdfe8a580d367b2aa4210810a21240"},
+]
+
+[package.dependencies]
+cryptography = ">=35.0.0"
+
+[[package]]
 name = "types-python-jose"
 version = "3.3.4.7"
 description = "Typing stubs for python-jose"
@@ -1654,6 +1681,22 @@ files = [
 
 [package.dependencies]
 types-pyasn1 = "*"
+
+[[package]]
+name = "types-redis"
+version = "4.5.5.2"
+description = "Typing stubs for redis"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-redis-4.5.5.2.tar.gz", hash = "sha256:2fe82f374d9dddf007deaf23d81fddcfd9523d9522bf11523c5c43bc5b27099e"},
+    {file = "types_redis-4.5.5.2-py3-none-any.whl", hash = "sha256:bf8692252038dbe03b007ca4fde87d3ae8e10610854a6858e3bf5d01721a7c4b"},
+]
+
+[package.dependencies]
+cryptography = ">=35.0.0"
+types-pyOpenSSL = "*"
 
 [[package]]
 name = "typing-extensions"
@@ -1948,4 +1991,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "54a1810f0b1abb46e771373a118b160ec33145f05913d885f87837685b9f60b9"
+content-hash = "e3074b2a4445bbcb4bdb4a7df7359814a15379e61670b674fa91bc61549411fb"

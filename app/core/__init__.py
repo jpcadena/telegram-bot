@@ -1,3 +1,3 @@
 """
-Package app.core initialization.
+Package app-core initialization.
 """

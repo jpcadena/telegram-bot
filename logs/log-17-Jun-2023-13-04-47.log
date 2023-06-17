@@ -1,0 +1,16 @@
+[main][2023-06-17 13:04:47][INFO][main][startup_event][68]: Starting API...
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][36]: Calling update_json
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][71]: Execution of update_json took 4.00003045797348e-07 seconds.
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][38]: Finished update_json
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][36]: Calling read_json_file
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][71]: Execution of read_json_file took 4.00003045797348e-07 seconds.
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][38]: Finished read_json_file
+[app.utils.files_utils.json_utils][2023-06-17 13:04:47][INFO][json_utils][read_json_file][33]: Json file read: /openapi.json
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][36]: Calling modify_json_data
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][38]: Finished modify_json_data
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][36]: Calling write_json_file
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][71]: Execution of write_json_file took 5.00003807246685e-07 seconds.
+[app.core.decorators][2023-06-17 13:04:47][INFO][decorators][wrapper][38]: Finished write_json_file
+[app.utils.files_utils.json_utils][2023-06-17 13:04:47][INFO][json_utils][write_json_file][57]: Json file written: /openapi.json
+[app.utils.utils][2023-06-17 13:04:47][INFO][utils][update_json][34]: Updated OpenAPI JSON file
+[main][2023-06-17 13:04:55][INFO][main][welcome_message][82]: Salute!

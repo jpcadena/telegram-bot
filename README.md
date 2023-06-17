@@ -53,11 +53,15 @@
 
 <!-- ABOUT THE PROJECT -->
 
+## About the project
+
 ![Project][project-screenshot]
 
 This backend project is about Telegram bot...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built with
 
 - [![Python][Python]][python-url]
 - [![FastAPI][FastAPI]][fastapi-url]
@@ -81,12 +85,17 @@ This backend project is about Telegram bot...
 - [![Markdown][Markdown]][Markdown-url]
 - [![Swagger][Swagger]][Swagger-url]
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
+## Getting started
+
+### Prerequisites
+
 - [Python 3.11+][Python-docs]
+
+### Installation
 
 1. Clone the **repository**
    ```
@@ -97,21 +106,23 @@ This backend project is about Telegram bot...
    cd telegram-bot
    ```
 3. Install **Poetry** package manager
-    ```
-    pip install poetry
-    ```
+   ```
+   pip install poetry
+   ```
 4. Install the project's **dependencies**
-    ```
-    poetry install
-    ```
+   ```
+   poetry install
+   ```
 5. Activate the **environment**
-    ```
-    poetry shell
-    ```
+   ```
+   poetry shell
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+
+### Usage
 
 1. If found **sample.env**, copy it and rename it to **.env**.
 2. Replace your **credentials** into the _.env_ file.
@@ -123,6 +134,8 @@ This backend project is about Telegram bot...
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
+## Contributing
 
 [![GitHub][GitHub]][GitHub-url]
 
@@ -151,11 +164,15 @@ autocompletion: [Tabnine](https://www.tabnine.com/install)
 
 <!-- LICENSE -->
 
+## License
+
 Distributed under the MIT License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
+## Contact
 
 - [![LinkedIn][LinkedIn]][linkedin-url]
 
