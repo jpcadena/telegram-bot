@@ -1,0 +1,106 @@
+[tool.poetry]
+name = "telegram-bot"
+version = "0.1.0"
+description = ""
+authors = ["Juan Pablo Cadena Aguilar <jpcadena@espol.edu.ec>"]
+readme = "README.md"
+packages = [{include = "telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.97.0"}
+uvicorn = "^0.22.0"
+gunicorn = "^20.1.0"
+pydantic = "^1.10.9"
+email-validator = "^2.0.0.post2"
+ruff = "^0.0.272"
+isort = "^5.12.0"
+mypy = "^1.3.0"
+black = "^23.3.0"
+pre-commit = "^3.3.3"
+python-dotenv = "^1.0.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+types-python-jose = "^3.3.4.7"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+types-passlib = "^1.7.7.12"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.16"}
+sqlalchemy2-stubs = "^0.0.2a34"
+aiomysql = "^0.2.0"
+aiofiles = "^23.1.0"
+types-aiofiles = "^23.1.0.4"
+aioredis = "^2.0.1"
+pymongo = "^4.3.3"
+beanie = "^1.19.2"
+pytest = "^7.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 80
+target-version = ["py311"]
+exclude = ["**/venv/*", "**/.mypy_cache/*", "**/.ruff_cache/*", "**/tests/*"]
+skip-string-normalization = true
+
+[tool.mypy]
+python_version = "3.11"
+show_error_codes = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+exclude = "venv|tests|.mypy_cache|.ruff_cache"
+disallow_any_generics = true
+disallow_subclassing_any = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_return_any = true
+implicit_reexport = false
+strict_equality = true
+
+[tool.isort]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 80
+profile = "black"
+
+[tool.ruff]
+select = ["E", "F"]
+ignore = []
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+line-length = 80
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+target-version = "py311"
+
+[tool.ruff.mccabe]
+max-complexity = 10
